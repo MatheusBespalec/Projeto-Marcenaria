@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+section.home{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	position: relative;
+	color: white;
+	padding: 150px 0;
+}
+
+.home h3{
+	color: white;
+}
+
+.layer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+.fix-index{
+	position: relative;
+	z-index: 2;
+}
+
+.home .btn{
+	margin-top: 15px;
+	font-size: 16px;
+	padding: 5px 70px;
+	background-color: #3FA3C5;
+	border: 0;
+}
+
+.divisao{
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #3FA3C5;
+	color: white;
+	font-size: 36px;
+}
+
+.sobre{
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgb(220,220,220);
+}
+
+h3{
+	color: #888;
+	text-align: left;
+}
+
+.sobre p{
+	color: #666;
+	text-align: justify;
+}
+
+.title{
+	position: relative;
+}
+
+.ln{
+	height: 3px;
+	width: 40px;
+	background-color: #3FA3C5;
+	position: absolute;
+	top: 0;
+}
+
+.diferenciais{
+	padding: 15px 0;
+}
+
+.diferenciais .row{
+	padding: 15px 0;
+	text-align: center;
+}
+
+.diferenciais i{
+	padding: 5px 0;
+	color: #888;
+	font-size: 32px;
+}
+
+.diferenciais p{
+	border-top: 1px dotted #888;
+	font-size: 14px;
+}
+
+.lista{
+	font-size: 28px;
+	padding: 15px 0;
+	background-color: #3FA3C5;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.form-group{
+	margin: 0;
+}
+
+.contato{
+	padding: 15px 0;
+	background-color: rgb(220,220,220);
+}
+
+.contato button{
+	margin: 15px auto;
+}
+
+footer{
+	color: white;
+	padding: 10px 0;
+}
+
+.foot1{
+	background-color: #333;
+}
+
+.foot2{
+	text-align: center;
+	background-color: #444;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: none;
+}

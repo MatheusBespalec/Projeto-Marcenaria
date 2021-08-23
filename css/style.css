@@ -1,0 +1,421 @@
+/*Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira Code', monospace;
+}
+
+html,body{
+	height: 100%;
+	background-color: #202020;
+}
+
+input:focus,
+textarea:focus{
+	outline: 0;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+
+/*BootClass*/
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+a.btn{
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 20px;
+	padding: 10px 50px;
+	border-radius: 7px;
+	background-color: #2962ff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.4s;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.btn:hover{
+	box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+}
+
+h1{
+	font-size: 35px;
+	color: #fff;
+}
+
+/*Header*/
+
+header{
+	height: 80px;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	color: #fff;
+}
+
+header h1{
+	line-height: 80px;
+	pointer-events: none;
+}
+
+header nav.nav-desktop li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 20px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	color: #ccc;
+	transition: 0.4s;
+}
+
+header nav.nav-desktop li:hover{
+	color: #fff;
+}
+
+header nav.nav-desktop li:hover span{
+	width: 100%;
+}
+
+header nav.nav-desktop li span{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	width: 20%;
+	background-color: #2962ff;
+	transition: 0.4s;
+}
+
+/*Banner*/
+
+section.banner{
+	background-color: #181818;
+	padding: 200px 0;
+	color: #fff;
+	background-image: url('../images/bg banner.png');
+	background-position: right center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+section.banner{
+	background-color: #181818;
+	padding: 200px 0;
+	color: #fff;
+}
+
+section.banner h1{
+	margin: 10px 0;
+}
+
+section.banner p{
+	font-size: 18px;
+}
+
+/*Sobre*/
+
+section.sobre{
+	padding: 50px 0;
+	color: #fff;
+}
+
+section.sobre .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+section.sobre .container div{
+	width: 50%;
+	padding: 0 15px;
+}
+
+section.sobre .container .one{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section.sobre .container .one img{
+	width: 300px;
+	border-radius: 150px;
+	border: 3px solid #ccc;
+}
+
+section.sobre .container .two span{
+	display: block;
+	height: 4px;
+	border-radius: 2px;
+	width: 50px;
+	background-color: #2962ff;
+}
+
+section.sobre .container .two p{
+	line-height: 24px;
+	margin: 10px 0;
+}
+
+/*Projetos*/
+
+section.projetos{
+	padding: 50px 0;
+	background-color: #181818;
+	text-align: center;
+}
+
+section.projetos > span{
+	display: block;
+	height: 4px;
+	border-radius: 2px;
+	width: 50px;
+	background-color: #2962ff;
+}
+
+section.projetos > span{
+	display: inline-block;
+	width: 50px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #2962ff;
+}
+
+section.projetos .wraper-proj{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+section.projetos .box-proj{
+	background-color: #202020;
+	width: 350px;
+	height: 350px;
+	padding: 15px;
+	color: #fff;
+	margin: 15px 0;
+	text-align: left;
+	border-radius: 5px;
+	border: 3px solid transparent;
+	transition: 0.4s;
+}
+
+section.projetos .box-proj:hover{
+	border-color:#2962ff;
+	box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+}
+
+section.projetos .box-proj h2{
+	font-size: 20px;
+}
+
+section.projetos .box-proj p{
+	margin: 15px 0;
+}
+
+section.projetos .box-proj p > a{
+	text-decoration: none;
+	color: #2962ff;
+}
+
+section.projetos .box-proj p > a:hover{
+	text-decoration: underline;
+}
+
+section.projetos .box-proj a{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+section.projetos .box-proj > span{
+	display: inline-block;
+	background-color: #181818;
+	padding: 3px;
+	margin: 2px;
+}
+
+/*Serviços*/
+
+section.servicos{
+	padding: 50px 0;
+	text-align: center;
+}
+
+section.servicos h1{
+	display: inline-block;
+	text-align: center;	
+}
+
+section.servicos > span{
+	display: block;
+	margin: 5px auto;
+	height: 4px;
+	border-radius: 2px;
+	width: 50px;
+	background-color: #2962ff;
+}
+
+section.servicos .wraper-serv{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+section.servicos .box-serv{
+	background-color: #181818;
+	width: 250px;
+	height: 300px;
+	padding: 15px;
+	color: #fff;
+	margin: 15px 0;
+	text-align: left;
+	border-radius: 5px;
+	border: 3px solid transparent;
+	transition: 0.4s;
+	text-align: center;
+}
+
+section.servicos .box-serv:hover{
+	border-color:#2962ff;
+	box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(13,71,165,0.75);
+}
+
+section.servicos .box-serv i{
+	font-size: 50px;
+	color: #2962ff;
+	margin: 10px 0;
+}
+
+section.servicos .box-serv h2{
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+/*Conhecimento*/
+
+section.conhecimento{
+	padding: 50px 0;
+	background-color: #181818;
+	text-align: center;
+	color: #fff;
+}
+
+section.conhecimento .container > span{
+	display: block;
+	height: 4px;
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 50px;
+	background-color: #2962ff;
+}
+
+section.conhecimento .wraper-tec{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+section.conhecimento .box-tec{
+	background-color: #202020;
+	width: 250px;
+	padding: 15px;
+	color: #fff;
+	margin: 15px 0;
+	text-align: left;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	transition: 0.4s;
+	text-align: center;
+}
+
+section.conhecimento .box-tec:hover{
+	border-color:#2962ff;
+	transform: scale(1.1,1.1);
+}
+
+section.conhecimento .box-tec i{
+	font-size: 130px;
+	color: #2962ff;
+	margin: 10px 0;
+}
+
+footer{
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	padding: 50px 0;
+}
+
+footer h2{
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 20px;
+	padding: 5px 15px;
+	border-radius: 15px;
+	background-color: #181818;
+	border: 1px dashed #fff;
+}
+
+footer p{
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+footer a{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer span{
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: #181818;
+	border: 1px solid #fff;
+}
+
+footer i{
+	color: #128C7E;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+
+@media screen and (max-width: 950px){
+	header nav.nav-desktop{
+		display: none;
+	}
+
+	section.banner{
+		background-image: none;
+		text-align: center;
+	}
+
+	section.sobre .container div{
+		width: 100%;
+	}
+}

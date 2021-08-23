@@ -1,0 +1,394 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+body, html{
+	height: 100%;
+}
+
+.clear{clear: both;}
+
+.container{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+input:focus,textarea{
+	outline: 0;
+}
+
+header{
+	padding:  0 0 30px 0;
+	background-image: url('../images/bg.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+header div.menu-topo{
+	padding: 25px 0;
+	border-bottom: 1px solid white;
+}
+
+.logo{
+	position: relative;
+	z-index: 2;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	float: left;
+}
+
+nav.menu-desktop{
+	float: right;
+}
+
+nav.menu-desktop li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 20px;
+}
+
+nav.menu-desktop a{
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+nav li.menu-btn{
+	padding: 3px;
+	border: 1px solid white;
+	border-radius: 12px;
+}
+
+nav.menu-mobile{
+	display: none;
+}
+
+nav.menu-mobile i{
+	position: absolute;
+	z-index: 2;
+	top: 20px;
+	right: 50px;
+	font-size: 33px;
+	color: white;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	position: absolute;
+	padding: 90px 0 0 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #31475e;
+}
+
+nav.menu-mobile li{
+	margin: 10px 0;
+}
+
+nav.menu-mobile a{
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+div.header-chamada{
+	padding: 90px 0;
+}
+
+div.header-chamada h1{
+	font-size: 42px;
+	color: white;
+	max-width: 450px;
+}
+
+div.header-chamada p{
+	margin: 15px 0;
+	font-size: 17px;
+	color: white;
+	max-width: 500px;
+}
+
+div.header-chamada form input[type=email]{
+	max-width: 237px;
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	border: 1px solid rgb(130,130,130);
+	border-radius: 18px;
+	padding-left: 12px;
+}
+
+div.header-chamada form input[type=submit]{
+	max-width: 180px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #ff5f27;
+	border: 0;
+	border-radius: 18px;
+	padding: 0 15px;
+	color: white; 
+	cursor: pointer;
+}
+
+/*Sessão sobre*/
+
+section.sobre{
+
+}
+
+section.sobre > p{
+	max-width: 680px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 300;
+	font-size: 22px;
+    font-style: italic;
+    padding: 30px 2%;
+}
+
+section.sobre .container{
+	max-width: 900px;
+}
+
+section.sobre .descricao{
+	width: 50%;
+	float: left;
+}
+section.sobre .descricao h3{
+	color: #31475F;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+section.sobre .descricao p{
+	margin-top: 15px;
+    color: #6a7c92;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.sobre img{
+	width: 50%;
+	float: right;
+	max-width: 500px;
+}
+
+/*Sessão Depoimento*/
+
+section.depoimento > .container{
+	max-width: 960px;
+	background-image: url('../images/bg2.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 350px;
+	position: relative;
+	padding: 40px 0;
+}
+
+section.depoimento .box-dep{
+	max-width: 450px;
+	width: 80%;
+	padding: 35px;
+	padding-bottom: 0;
+	position: absolute;
+	bottom: -20px;
+	right: 35px;
+	background-color: white;
+	color: #31475e;
+	font-size: 18px;
+}
+
+section.depoimento .box-dep p:nth-of-type(1){
+	font-weight: 300;
+}
+
+/*Sessão Serviços*/
+
+section.servicos{
+	padding: 50px 0;
+}
+
+section.servicos h2{
+	text-align: center;
+	font-size: 22px;
+	color: #31475e;
+}
+
+section.servicos .container{
+	max-width: 960px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.servicos .wraper-card{
+	width: 33%;
+	padding: 30px;
+}
+
+section.servicos .card{
+	color: #31475e;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	height: 100%;
+}
+
+section.servicos .card img{
+	width: 100%;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+section.servicos .card .card-txt{
+	padding: 20px;
+}
+
+section.servicos .card .card-txt h3{
+	font-size: 20px;
+	font-weight: normal;
+}
+
+section.servicos .card .card-txt p{
+	color: #6a7c92;
+	font-size: 15px;
+	font-weight: 300;
+	margin: 8px 0;
+}
+
+section.servicos .card .card-txt a{
+	padding: 6px 12px;
+	border: 1px solid #6a7c92;
+	border-radius: 20px; 
+	color: #6a7c92;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+/*Sessçao Portifolio*/
+
+section.portifolio{
+	padding: 30px 0;
+}
+
+h2{
+	text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+
+section.portifolio .container{
+	max-width: 960px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+section.portifolio .empresas{
+	padding: 30px 20px;
+}
+
+section.portifolio .empresas img{
+	width: 130px;
+}
+
+/*Sessão Contato*/
+
+section.contato{
+	padding: 20px 0;
+}
+
+section.contato .container{
+	max-width: 800px;
+	text-align: center;
+}
+
+section.contato input[type=text],
+section.contato input[type=email]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 12px;
+	margin: 8px 0;
+	border: 1px solid #31475e;
+	border-radius: 13px;
+}
+
+section.contato textarea{
+	padding: 10px;
+	width: 100%;
+	height: 100px;
+	resize: vertical;
+	border: 1px solid #31475e;
+	border-radius: 8px;
+}
+
+section.contato input[type=submit]{
+	width: 130px;
+	height: 40px;
+	background-color: #ff5f27;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+	border: 0;
+}
+
+
+/*Media Querys*/
+
+
+@media screen and (max-width: 1024px){
+	nav.menu-desktop{display: none;}
+	nav.menu-mobile{display: block;}
+	nav.menu-mobile li.menu-btn{display: inline-block;}
+	.header-chamada{text-align: center;}
+	.header-chamada h1, .header-chamada p{display: inline-block;}
+
+	section.servicos .wraper-card{
+		width: 100%;
+		padding: 0;
+		margin: 20px auto;
+		max-width: 470px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	section.sobre .descricao{
+		width: 100%;
+		float: none;
+	}
+
+	section.sobre .container{
+		text-align: center;
+	}
+
+	section.sobre img{
+		width: 100%;
+		float: none;
+	}
+
+	div.header-chamada form input[type=email]{
+		margin-bottom: 10px;
+	}
+
+	section.depoimento .container .box-dep{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		min-height: 300px;
+	}
+}
